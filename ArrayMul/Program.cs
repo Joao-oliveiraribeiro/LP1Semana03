@@ -15,5 +15,6 @@ namespace ArrayMul
                 {float.Parse(args[2], dec), float.Parse(args[3], dec)}
             };
 
+            float[] b = new float[2] {float.Parse(args[4], dec), float.Parse(args[5], dec)};
+            float [] resultado = new float[2];
 
-}
