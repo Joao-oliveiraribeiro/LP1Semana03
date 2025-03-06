@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RighSize", "RighSize\RighSi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeString", "ChangeString\ChangeString.csproj", "{4E80CA6F-2B7A-458D-AB78-42F9103C2A41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMul", "ArrayMul\ArrayMul.csproj", "{0BB67DA6-3B0F-4B24-A048-74B863D9F498}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{4E80CA6F-2B7A-458D-AB78-42F9103C2A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E80CA6F-2B7A-458D-AB78-42F9103C2A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E80CA6F-2B7A-458D-AB78-42F9103C2A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB67DA6-3B0F-4B24-A048-74B863D9F498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB67DA6-3B0F-4B24-A048-74B863D9F498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB67DA6-3B0F-4B24-A048-74B863D9F498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB67DA6-3B0F-4B24-A048-74B863D9F498}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
