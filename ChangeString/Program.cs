@@ -9,9 +9,13 @@ namespace ChangeString
            Console.Write("Digite uma string: ");
            string texto = Console.ReadLine(); 
 
-           Console.Write("Digite um caracter para substituir por x:");
-           char caracter = Console.ReadKey().KeyChar;
-           Console.WriteLine();
+           Console.Write("Digite um caracter para substituir por 'x':");
+           string input_char = Console.ReadLine();
+           char caracter = input_char[0];
+
+           string textoalt = texto.Replace(caracter, 'x');
+
+           Console.WriteLine("String alterada: " + textoalt);
         }
     }
 }
