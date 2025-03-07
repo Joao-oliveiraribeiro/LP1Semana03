@@ -22,7 +22,19 @@ namespace HeroPerk
                 return;
             }
 
-            
+            string input = args[0].ToLower();
+            var perk_cont = new Dictionary<char, int>() {['w']=0, ['a']=0, ['s']=0, ['d']=0};
+
+            foreach (char c in input)
+            {
+                if (!perk_cont.TryGetValue(c, out int count))
+                {
+                    Console.WriteLine("!Unknown perk!");
+                    return;
+                }
+                perk_cont[c] = count +1;
+            }
+
         }
     }
 }
