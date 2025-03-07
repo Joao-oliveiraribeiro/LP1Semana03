@@ -41,7 +41,19 @@ namespace HeroPerk
             if (perk_cont['s']% 2== 1) player_Perks |= Perks.AutoHeal;
             if (perk_cont['d']% 2== 1) player_Perks |= Perks.DoubleJump;
 
-            
+            if (player_Perks== 0)
+            {
+                Console.WriteLine("!No perks at all");
+                return;
+            }
+
+            Console.WriteLine(player_Perks);
+
+            if ((player_Perks & (Perks.Stealth | Perks.DoubleJump))== (Perks.Stealth | Perks.DoubleJump))
+                Console.WriteLine("!Silent jumper!");
+
+            if ((player_Perks & Perks.AutoHeal)==0)
+                Console.WriteLine("!Not gonna make it!");
         }
     }
 }
