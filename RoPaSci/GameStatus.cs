@@ -1,4 +1,4 @@
-﻿namespace RoPaSci
+﻿﻿namespace RoPaSci
 {
     public enum GameStatus
     {
