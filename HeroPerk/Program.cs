@@ -1,12 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HeroPerk
 {
-    public class Program
+    [Flags]
+    enum Perks
     {
-        private static void Main(string[] args)
+        WarpShift = 1 << 0,
+        Stealth = 1 << 1,
+        AutoHeal = 1 << 2,
+        DoubleJump = 1 << 3
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            if (args.Length != 1 || string.IsNullOrWhiteSpace(args[0]))
+            {
+                Console.WriteLine("!Unknown perk!");
+                return;
+            }
+
+            
         }
     }
 }
