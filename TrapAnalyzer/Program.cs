@@ -25,9 +25,16 @@ namespace TrapAnalyzer
         /// <returns>The player gear.</returns>
         private static PlayerGear ParseGear(string[] args)
         {
-            // ////////// //
-            // CHANGE ME! //
-            // ////////// //
+            PlayerGear gear = PlayerGear.None;
+
+            for (int i = 1; i < args.Length; i++)
+            {
+                if (Enum.TryParse(args[i], out PlayerGear parsedGear))
+                {
+                    gear |= parsedGear;
+                }
+            }
+            return gear;
         }
 
         /// <summary>
@@ -38,9 +45,9 @@ namespace TrapAnalyzer
         /// <returns>Wether the player survived the trap or not.</returns>
         private static bool CanSurviveTrap(TrapType trap, PlayerGear gear)
         {
-            // ////////// //
-            // CHANGE ME! //
-            // ////////// //
+            
+    
+
         }
 
         /// <summary>
