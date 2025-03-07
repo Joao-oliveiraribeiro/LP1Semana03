@@ -35,6 +35,13 @@ namespace HeroPerk
                 perk_cont[c] = count +1;
             }
 
+            Perks player_Perks = 0;
+            if (perk_cont['w']% 2== 1) player_Perks |= Perks.WarpShift;
+            if (perk_cont['a']% 2== 1) player_Perks |= Perks.Stealth;
+            if (perk_cont['s']% 2== 1) player_Perks |= Perks.AutoHeal;
+            if (perk_cont['d']% 2== 1) player_Perks |= Perks.DoubleJump;
+
+            
         }
     }
 }
